@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Ishwar.dev (sample)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div>Ishwar<span style="color:transparent">.</span></div>
+        <div class="dot" title="accent"></div>
+      </div>
+
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+   
+    <section class="hero" id="home">
+      <h1>Hi, I'm <span class="accent">Ishwar</span>.<br/>MERN Stack Developer.</h1>
+      <p>Transforming ideas into web experiences — clean UIs, smooth animations and high-performance backends. Creating digital experiences that matter.</p>
+
+      <div class="cta">
+        <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
+        <button class="btn btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+      </div>
+
+      <div class="palette" aria-hidden="true" style="margin-top:18px;">
+        <div class="sw" style="background:linear-gradient(90deg,#f06ea7,#8b82ff)"></div>
+        <div class="sw" style="background:#34383f"></div>
+        <div class="sw" style="background:#2b2f36"></div>
+        <div class="sw" style="background:#9aa0a8"></div>
+      </div>
+
+      <div class="tech-list" id="skills">
+        <div class="tech">React</div>
+        <div class="tech">Node.js</div>
+        <div class="tech">MongoDB</div>
+        <div class="tech">Tailwind</div>
+        <div class="tech">JavaScript</div>
+        <div class="tech">Express</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <div style="font-weight:700">Featured Projects</div>
+        <div>Need something built?</div>
+      </div>
+
+      <div class="projects">
+       <article class="card">
+          <div class="thumb">
+            <img src="ASSETS/IMG/LIBRARY/LIBRARY.jpg" alt="StudyHub screenshot">
+          </div>
+          <span class="tag">MERN</span>
+          <h3>StudyHub</h3>
+          <p class="desc">Notes sharing platform for students with uploads and previews. Built with a modern MERN stack for seamless collaboration.</p>
+
+          <div class="features">
+            <span class="feature-pill">File Upload</span>
+            <span class="feature-pill">User Auth</span>
+            <span class="feature-pill">Responsive</span>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-demo">Live Demo</button>
+            <button class="btn btn-code">Code</button>
+            <button class="btn btn-ghost">Learn More</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="thumb">
+            <img src="ASSETS/IMG/CODING/CODING.jpg" alt="Rank-Rush">
+          </div>
+          <span class="tag">MERN</span>
+          <h3>Rank-Rush</h3>
+          <p class="desc">A real-time leaderboard with points, claim rewards and ranking system. Users can track their claim history and points over time.</p>
+
+          <div class="features">
+            <span class="feature-pill">Leaderboard</span>
+            <span class="feature-pill">Points System</span>
+            <span class="feature-pill">Realtime</span>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-demo">Live Demo</button>
+            <button class="btn btn-code">Code</button>
+            <button class="btn btn-ghost">Learn More</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="thumb">
+            <img src="ASSETS/IMG/SPOTIFY/SPOTIFY.jpg" alt="SPOTIFY LOGO">
+          </div>
+          <span class="tag">HTML / CSS</span>
+          <h3>TuneWave — Spotify Clone</h3>
+          <p class="desc">A front-end Spotify clone using HTML & CSS replicating sleek UI and playlist features for demo and learning purposes.</p>
+
+          <div class="features">
+            <span class="feature-pill">Player UI</span>
+            <span class="feature-pill">Playlist Section</span>
+            <span class="feature-pill">Responsive</span>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-demo">Live Demo</button>
+            <button class="btn btn-code">Code</button>
+            <button class="btn btn-ghost">Learn More</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-card" role="form" aria-labelledby="contact-title">
+        <h2 id="contact-title">Let's Connect</h2>
+        <p>Have a project in mind? Let's discuss how we can bring your ideas to life.</p>
+
+        <form onsubmit="alert('This is a demo. Hook up your backend or email handler.'); return false;">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div style="margin-bottom:12px">
+            <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <div class="send">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </div>
+          <div style="display:flex;gap:16px;justify-content:center;margin-top:18px;;font-size:0.9rem">
+            <div style="display:flex;align-items:center;gap:8px"><span style="width:10px;height:10px;border-radius:50%;background:#caa9ff;display:inline-block"></span> Available for freelance</div>
+            <div style="display:flex;align-items:center;gap:8px"><span style="width:10px;height:10px;border-radius:50%;background:#ff92b0;display:inline-block"></span> Quick response</div>
+            <div style="display:flex;align-items:center;gap:8px"><span style="width:10px;height:10px;border-radius:50%;background:#8bd3ff;display:inline-block"></span> Remote collaboration</div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+   
+    
+    <footer>
+      <div class="footer-links">
+        <a href="#projects" style="text-decoration:none">Projects</a>
+        <a href="#skills" style="text-decoration:none">Skills</a>
+        <a href="#contact" style="text-decoration:none">Contact</a>
+      </div>
+
+      <div class="socials" aria-label="social links">
+      
+        <a href="#" title="Instagram" style="opacity:0.9">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden></svg>
+        </a>
+
+        <a href="#" title="LinkedIn">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden> </svg>
+        </a>
+
+        <a href="#" title="GitHub">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden></svg>
+        </a>
+      </div>
+
+      <div style="margin-top:14px;;font-size:0.9rem">© 2025  · Built with HTML,CSS JS</div>
+    </footer>
+  </div>
+</body>
+</html>
